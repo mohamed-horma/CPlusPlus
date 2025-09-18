@@ -1,9 +1,0 @@
-./src/main.cpp
-./src/logical-gate.cpp
-./src/QuestionBonus.cpp
-./src/book.cpp
-./README.md
-./include/logical.h
-./include/book.h
-./files.txt
-./Makefile
