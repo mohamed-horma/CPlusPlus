@@ -94,13 +94,21 @@ int main(){
     z16.displayAlgebricForm();
     rotate(z16, M_PI/4); // rotate by 45 degrees
     z16.displayAlgebricForm(); */
-
+/*
     cout << "Test heightModulus" << endl;
     Complex z17(1.0,2.0);
     z17.displayAlgebricForm();
     product(z17,z17).displayAlgebricForm();
     Complex z18 = heightedMoudulus(z17, product(z17,z17));
     z18.displayAlgebricForm();
+*/
 
+    cout << "Test racineUnity function" << endl;
+
+    Complex Table[5];
+    racineUnity(5, Table);
+    for (int i=0; i<5; i++){
+        Table[i].displayAlgebricForm();
+    }
     return 0;
 }

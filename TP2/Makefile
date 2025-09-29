@@ -14,8 +14,12 @@ $(EXECS): $(OBJ)
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
+
+simpleTest: simpleTest.cpp src/complex.cpp
+	$(CXX) -fno-elide-constructors $(CXXFLAGS) -o $@ $^
+
 clean:
-	rm -f $(OBJ) $(EXECS)
+	rm -f $(OBJ) $(EXECS) simpleTest
 
 mrproper: clean
 	rm -f $(EXECS)

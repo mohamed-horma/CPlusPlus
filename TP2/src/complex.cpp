@@ -170,8 +170,11 @@ Complex heightedMoudulus(Complex const &z1, Complex const &z2){
 
 
 
-
-
+void racineUnity(int n, Complex* table){
+    for (int i=0; i<n; i++){
+        table[i] = Complex(cos(2*i*M_PI / n), sin(2*i*M_PI / n));
+    }
+}
 
 
 

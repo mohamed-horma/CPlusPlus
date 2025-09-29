@@ -29,5 +29,5 @@ Complex difference(Complex& z1, Complex& z2 );
 Complex normalized(Complex& z);
 void rotate(Complex& z, double angle);
 Complex heightedMoudulus(Complex const &z1, Complex const &z2);
-
+void racineUnity(int n, Complex* table);
 #endif
